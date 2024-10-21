@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms, Truths, and Lies</title>
+</head>
+
+<body style="background-color: beige;">
+    <h1>Mr Sieg's Truth and a Lie Game</h1>
+    <hr>
+    <!--https://stackoverflow.com/questions/4309950/how-to-align-input-forms-in-html-->
+    <!-- student challenge: add last name and check-->
+    <h2>Introductions</h2>
+    <form action="" id="name-form">
+        <label for="fname">First Name:</label><br>
+        <input type="text" name="fname" id="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" name="lname" id="lname"><br>
+        <label for="age">Age:</label><br>
+        <input type="text" name="age" id="age"><br>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="greet();">
+    <p id="greet" style="font-size:x-large">Welcome!</p>
+
+    <hr>
+
+    <!-- Demo-->
+    <h2>Warm up trivia question</h2>
+    <p>What is the only food that cannot go bad?</p>
+    <p id="trivia1-answer"></p>
+    <form action="">
+        <input type="radio" name="trivia1" id="chocolate">
+        <label for="chocolate">Dark Chocolate</label><br>
+        <input type="radio" name="trivia1" id="tuna">
+        <label for="tuna">Canned Tuna</label><br>
+        <input type="radio" name="trivia1" id="honey">
+        <label for="tuna">Honey</label><br>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="trivia1();">
+    <hr>
+
+    <!-- Student challenge #1-->
+    <h2>Two truths and a lie. Which one is the lie?</h2>
+    <p id="tal1"></p>
+    <form action="">
+        <input type="radio" name="truths" id="germany">
+        <label for="frog">I went to kindergarten in Germany</label><br>
+        <input type="radio" name="truths" id="bridge">
+        <label for="math">I competed in a world championship for the US</label><br>
+        <input type="radio" name="truths" id="sing">
+        <label for="web">I can sing with perfect pitch</label><br>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="truthAndLie();">
+    <hr>
+
+    <!-- Student challenge #2-->
+    <h2>Extra Challenge: Two truths and a lie. <span style="color:red;">Which two are true?</span></h2>
+    <p id="tal2">Hint you'll need to use && and || logic in your javascript code for this</p>
+    <form action="">
+        <input type="checkbox" name="truths2" id="southamerica">
+        <label for="korea">I spent several months in British Guyana on a Humanitarian Mission</label><br>
+        <input type="checkbox" name="truths2" id="sibling">
+        <label for="twin">I am the youngest sibling</label><br>
+        <input type="checkbox" name="truths2" id="threat">
+        <label for="double-joint">I had a billionaire threaten to get me fired</label><br>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="truthAndLie2();">
+
+    <!-- link to js file goes on bottom -->
+    <script src="js/game.js"></script>
+</body>
+
+</html>
